@@ -10,7 +10,7 @@ A package for generating google's UULE query parameter used for simulating/mocki
 npm i uule-generate
 ```
 
-##Usage 
+## Usage 
 
 ```
 import generate from 'uule-generate'
