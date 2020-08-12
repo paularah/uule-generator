@@ -23,7 +23,7 @@ const generateFromName = (name:string):string => {
  * @returns {string} the UULE for the specified location 
  */
 
-const generateFromCanonical = (canonicalName:string, config=null):string => {
+const generateFromCanonical = (canonicalName:string):string => {
     const validCanonical = geoTarget.find( data => data['Canonical Name'] === canonicalName)
     if(!validCanonical){
         throw Error('Invalid canonical name')
@@ -33,10 +33,7 @@ const generateFromCanonical = (canonicalName:string, config=null):string => {
     return `${params}${lengthValue}${encodedLocation}`
 }
 
-export default {
-    generateFromName,
+export default () => {
+    generateFromName
     generateFromCanonical
-}
-interface ICong{
-    iso: boolean | null
 }

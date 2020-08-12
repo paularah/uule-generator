@@ -6,6 +6,6 @@ describe('creates UULE from name', () => {
     })
 
     it('its should return a valid uule for new york', () => {
-        expect(uule.generateFromCanonical('Lezigne,Pays de la Loire,France')).toBe('w+CAIQICIfTGV6aWduZSxQYXlzIGRlIGxhIExvaXJlLEZyYW5jZQ')
+        expect(uule.generateFromCanonical('Lezigne,Pays de la Loire,France')).toBe('w+CAIQICIfTGV6aWduZSxQYXlzIGRlIGxhIExvaXJlLEZyYW5jZQ==')
     })
 })
