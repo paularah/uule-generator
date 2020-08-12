@@ -33,7 +33,7 @@ const generateFromCanonical = (canonicalName:string):string => {
     return `${params}${lengthValue}${encodedLocation}`
 }
 
-export default () => {
-    generateFromName
+export default {
+    generateFromName,
     generateFromCanonical
 }
